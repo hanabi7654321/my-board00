@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.jumbotron.my-3
+    h1.display-4 キャラボード
+    hr.my-4
+    p.lead キャラボードは、好きなキャラで投稿する匿名掲示板です。
+    a(href='/posts').btn.btn-lg.btn-outline-warning  投稿一覧

@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p 投稿一覧ページ #{title}
+  h1= 投稿ページ
+  form(action="/posts" method="POST")
+      p 名前:
+      input(type="text" name="name")
+      p 内容:
+      textarea(name="kakikomi" style="width:100%;height:60px;")
+      div(style="margin-top:30px;")
+          button(type="submit") 投稿
